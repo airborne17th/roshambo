@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Small project game simulating Rock, Paper, Scissors">
+  <meta name="author" content="John Kyker">
+  <link rel="icon" href="img/icon.png">  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<title>Roshambo</title>
+</head>
+
+<body>
+<main>
+    <div class="jumbotron text-center">
+        <h1>Roshambo</h1>
+        <p>The classic game of rock, paper and scissors.<br> Click on the button to select your weapon of choice.</p>
+        <img src="img/rules.jpg" alt="Rules of Roshambo" width="600" height="400">
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <h3><i class="fas fa-user fa-2x"></i> Player</i></h3>
+            <p>Choose an Option:</p>
+            <button class="button button1" id="RockBtn">Rock</button>
+            <button class="button button2" id="PaperBtn">Paper</button>
+            <button class="button button3" id="ScissorsBtn">Scissors</button><br><br>
+            <span id="playerDisplay"></span>
+            <span id="playerDisplay2"></span><br><br>
+            <span id="resultDisplay"></span>
+          </div>
+          <div class="col-sm-2">
+            <h3>Stats</h3>
+            <p>Player Wins:<br>
+            <span id="pWins">0</span></p>
+            <p>CPU Wins:<br>
+            <span id="cWins">0</span></p>
+            <button class="button button4" id="ResetBtn">Reset</button>
+          </div>
+          <div class="col-sm-5">
+            <h3><i class="fas fa-desktop fa-2x"></i> CPU</h3>
+            <p id="cText">CPU is thinking...</p><br><br><br><br>
+            <span id="compDisplay"></span>
+            <span id="compDisplay2"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright text-center py-3">© 2020 John Kyker</div>  
+</main>
+</body>
+<script src="script/game.js"></script>
+<script src="https://kit.fontawesome.com/80c1c40743.js" crossorigin="anonymous"></script>
+</html>
